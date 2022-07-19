@@ -23,13 +23,13 @@ return (
         flexDirection: 'column',
       }}
     >
-        <p>Brand: {brand}</p>
-        <p>Model: {model}</p>
-        <p>Year: {year}</p>
-        <p>Max Speed: {maxSpeed}</p>
-        <p>{isAutomatic ? 'Is' : 'Not'} Automatic</p>
-        <p>Engine: {engine}</p>
-        <p>Number of doors: {numberOfDoors}</p>
+        <span>Brand: {brand}</span>
+      <span>Model: {model}</span>
+      <span>Year: {year}</span>
+      <span>Max Speed: {maxSpeed}</span>
+      <span>{isAutomatic ? 'Is' : 'Not'} Automatic </span>
+      <span>Engine: {engine}</span>
+      <span>Number of doors: {numberOfDoors}</span>
 
     </li>
 </div>

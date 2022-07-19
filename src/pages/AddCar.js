@@ -1,7 +1,6 @@
 import React, {  useState } from 'react';
-import {useHistory} from 'react-router-dom';
-
-import CarService from '../services/CarService';
+import { useHistory } from 'react-router-dom';
+import carService from '../services/CarService';
 
 const YEARS = Array(2018 - 1990 + 1)
   .fill(1990)
@@ -12,8 +11,6 @@ const YEARS = Array(2018 - 1990 + 1)
 
     function AddCar() {
 
-
-    const history = useHistory();
     const [newCar,setNewCar] = useState({
         brand: '',
         model: '',
@@ -28,9 +25,8 @@ const YEARS = Array(2018 - 1990 + 1)
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await CarService.add(newCar);
+        await carService.add(newCar);
 
-        history.push('/cars');
     
       };
 

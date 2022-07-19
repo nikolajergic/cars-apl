@@ -1,4 +1,4 @@
- import CarService from "../services/CarService";
+ import carService from "../services/CarService";
  import SingleCar from "../components/SingleCar";
  import {useEffect,useState} from 'react';
  
@@ -7,7 +7,7 @@ function AppCars() {
 
     useEffect(() => {
         const fetchCars = async () => {
-          const data = await CarService.getAll();
+          const data = await carService.getAll();
     
           setCars(data);
         };
@@ -32,6 +32,7 @@ function AppCars() {
                 numberOfDoors={car.numberOfDoors}
               />
             ))}
+            
           </ul>
         </div>
       );

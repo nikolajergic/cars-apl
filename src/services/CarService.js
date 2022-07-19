@@ -31,4 +31,4 @@ class CarService {
 }
 
 
-export default CarService;
+export default new CarService();
